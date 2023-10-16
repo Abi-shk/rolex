@@ -1,0 +1,59 @@
+
+
+
+<div class="container" >
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;" >Add Product</h1>
+    <form (ngSubmit)="addNewProduct()" [formGroup]="addFormModel" id="productForm" >
+
+        <input formControlName="id"  type="number" id="id" name="id" placeholder="Product ID" required>
+
+        <div *ngIf="this.addFormModel.get('id')?.errors&&this.addFormModel.get('id')?.touched">
+            <p class="text-danger text-center">Product ID</p>
+        </div>
+
+        <input formControlName="productName" type="text" id="productName" name="productName" placeholder="Product Name" required>
+
+        <div *ngIf="this.addFormModel.get('productName')?.errors&&this.addFormModel.get('productName')?.touched">
+            <p class="text-danger text-center">Invalid Product Name</p>
+        </div>
+        
+        <input formControlName="categoryId"  type="number" id="categoryId" name="categoryId" placeholder="Category ID" required>
+
+        <div *ngIf="this.addFormModel.get('categoryId')?.errors&&this.addFormModel.get('categoryId')?.touched">
+            <p class="text-danger text-center">Invalid Category ID</p>
+        </div>
+
+        <input formControlName="description" type="text" id="description" name="description" placeholder="Description" required>
+
+        <div *ngIf="this.addFormModel.get('description')?.errors&&this.addFormModel.get('description')?.touched">
+            <p class="text-danger text-center">Invalid Description</p>
+        </div>
+
+        <input formControlName="price" type="number" id="price" placeholder="Price" name="price" required>
+
+        <div *ngIf="this.addFormModel.get('price')?.errors&&this.addFormModel.get('price')?.touched">
+            <p class="text-danger text-center">Invalid Price</p>
+        </div>
+
+        <input formControlName="image" type="url" id="image" placeholder="Image URL" name="image" required>
+
+        <div *ngIf="this.addFormModel.get('image')?.errors&&this.addFormModel.get('image')?.touched">
+            <p class="text-danger text-center">Invalid Image URL</p>
+        </div>
+
+        <input formControlName="rating" type="number" id="rating" placeholder="Rating" name="rating" step="0.1" min="0" max="5" required>
+
+        <div *ngIf="this.addFormModel.get('rating')?.errors&&this.addFormModel.get('rating')?.touched">
+            <p class="text-danger text-center">Invalid Rating</p>
+        </div>
+        
+        <input formControlName="review" type="number" id="review" placeholder="Review Count" name="review" required>
+
+        <div *ngIf="this.addFormModel.get('review')?.errors&&this.addFormModel.get('review')?.touched">
+            <p class="text-danger text-center">Invalid Review Count</p>
+        </div>
+<div style="align-items: center; display: flex; justify-content: center;" >
+        <button type="submit">Add Product</button>
+    </div>
+    </form>
+</div>

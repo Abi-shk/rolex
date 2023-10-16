@@ -1,0 +1,21 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6" style="height: auto;"><img  class="card-img-top mb-5 mb-md-0" src={{pdata.image}} alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">SKU: BST-498</div>
+                <h1 class="display-5 fw-bolder" style="font-family: 'Times New Roman', Times, serif;">{{pdata.productName}}</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through">Rs {{pdata.price+500}}</span>
+                    <span> Rs. {{pdata.price}} Only</span>
+                </div>
+                <p class="lead">{{pdata.description}}</p>
+                <div class="d-flex">
+                   <button style="background-color: rgb(243, 9, 9);" class="btn btn-light p-2 w-25 "><a style="text-decoration: none; color: antiquewhite;" href="products/edit-product/{{pdata.id}}"> Edit </a></button>
+                   <button (click)="deleteProduct()" style="background-color: rgb(243, 9, 9);" class="btn btn-outline-light p-2  w-25  ms-3">Delete</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

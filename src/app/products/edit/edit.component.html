@@ -1,0 +1,20 @@
+<h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;" class="mt-5" >Edit Product</h1>
+<div class="container" >
+
+<form (ngSubmit)="update()" id="productForm" >
+  
+
+    <input [(ngModel)]="pdata.productName" type="text" id="productName" name="productName" placeholder="Product Name" required>
+    <input [(ngModel)]="pdata.categoryId" type="number" id="categoryId" name="categoryId" placeholder="Category ID" required>
+    <input [(ngModel)]="pdata.description" type="text" id="description" name="description" placeholder="Description" required>
+    <input [(ngModel)]="pdata.price" type="number" id="price" placeholder="Price" name="price" required>
+    <input [(ngModel)]="pdata.image" type="url" id="image" placeholder="Image URL" name="image" required> 
+    <input [(ngModel)]="pdata.rating" type="number" id="rating" placeholder="Rating" name="rating" step="0.1" min="0" max="5" required>
+    <input [(ngModel)]="pdata.review" type="number" id="review" placeholder="Review Count" name="review" required>
+
+   
+<div style="align-items: center; display: flex; justify-content: center;" >
+    <button type="submit" >Update</button>
+</div>
+</form>
+</div>

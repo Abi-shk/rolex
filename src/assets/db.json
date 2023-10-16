@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Rolex",
+      "categoryId": 2,
+      "description": "2020 Submariner Date white gold (New/unworn)116619LB fullset",
+      "price": 600000,
+      "image": "https://i.postimg.cc/Z5ZWhFBy/R.jpg",
+      "rating": 4,
+      "review": 150
+    },
+    {
+      "id": 2,
+      "productName": "Rolex GMT-Master II",
+      "categoryId": 1,
+      "description": "2023 GMT-Master II \"Batman\" Oyster Bracelet 126710BLNR-0003 .full set",
+      "price": 16000000,
+      "image": "https://i.postimg.cc/3xM7hq4v/Rolex-Daytona-73-625x800.jpg",
+      "rating": 4.5,
+      "review": 150
+    },
+    {
+      "id": 4,
+      "productName": "Rolex GMT-Master II",
+      "categoryId": 1,
+      "description": "2023 GMT-Master II \"Batman\" Oyster Bracelet 126710BLNR-0003 .full set",
+      "price": 1618012,
+      "image": "https://i.postimg.cc/Rhk0BRbB/Rolex-Oyster-Perpetual-GMT-Master-II-004.jpg",
+      "rating": 4.5,
+      "review": 1500
+    },
+    {
+      "id": 5,
+      "productName": "Rolex Submariner Date",
+      "categoryId": 2,
+      "description": "2020 Submariner Date white gold (New/unworn)116619LB fullset",
+      "price": 4432285,
+      "image": "https://i.postimg.cc/0jvCkLXk/wd-19-preview.jpg",
+      "rating": 4.2,
+      "review": 350
+    },
+    {
+      "id": 10,
+      "productName": "Rolex Daytona Gold Watch ",
+      "categoryId": 2,
+      "description": "Rolex Daytona Gold Watch ",
+      "price": 160000,
+      "image": "https://i.postimg.cc/KjtsF0gZ/OIP.jpg",
+      "rating": 4,
+      "review": 600
+    }
+  ]
+}
